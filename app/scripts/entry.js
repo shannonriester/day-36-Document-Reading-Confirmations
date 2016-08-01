@@ -10,7 +10,9 @@ const router = (
   <Router history={hashHistory}>
     <Route path="/" component={App}>
       <IndexRoute component={AllDocs}/>
-        <Route path="/:docId" component={SingleDoc}/>
+      <Route path="docs" component={AllDocs}>
+        <Route path=":docId" component={SingleDoc}/>
+      </Route>
     </Route>
   </Router>
 );

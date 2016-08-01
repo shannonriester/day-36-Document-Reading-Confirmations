@@ -7,7 +7,7 @@ const App = React.createClass({
     return (
       <div className="app">
         <nav className="nav">
-          <Link to="/">Your Dox</Link>
+          <Link to="/docs">Your Dox</Link>
           <Link to="/completed">Completed Dox</Link>
           <Link to="/incomplete">Incomplete Dox</Link>
         </nav>
