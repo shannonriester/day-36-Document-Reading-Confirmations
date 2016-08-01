@@ -20,7 +20,7 @@ const store = {
         title: 'Third Dox',
         body: 'Occupy iPhone artisan, listicle actually distillery try-hard lumbersexual kogi pitchfork. Disrupt beard viral, chillwave next level YOLO literally tacos. Shabby chic helvetica health goth, craft beer ennui ethical brooklyn offal. Ugh chillwave cred semiotics plaid. Wolf church-key affogato, next level trust fund bitters waistcoat 3 wolf moon pug man braid umami fixie. Chia banh mi cliche celiac kombucha intelligentsia. Mumblecore listicle DIY yuccie pickled.',
       }]),
-  docModel: new DocModel()
+  docModel: new DocModel(),
 }
 
 export default store;
