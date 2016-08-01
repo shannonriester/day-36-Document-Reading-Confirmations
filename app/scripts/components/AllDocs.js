@@ -1,5 +1,7 @@
 import React from 'react';
 
+import SingleDoc from './SingleDoc';
+
 const AllDocs = React.createClass({
   render: function(){
     return (
