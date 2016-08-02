@@ -14,8 +14,8 @@ const SingleDoc = React.createClass({
   componentDidMount: function(){
     store.docModel.on('change', () => {
       this.setState({checkbox:store.docModel.get('isRead')});
-      // this.setState({showModal:store.docModel.get('confirmed')});
     });
+    console.log(this.props);
   },
   clickedCheckbox: function(){
     store.docModel.markAsRead();
@@ -34,7 +34,7 @@ const SingleDoc = React.createClass({
 
     let docModal;
     if (this.state.showModal) {
-      docModal = <DocModal hideModal={this.hideModal} confirmedRead={this.confirmedRead} docTitle={docData.title}/>
+      docModal = <DocModal hideModal={this.hideModal} confirmedRead={this.confirmedRead} docTitle={docData.title} docId={docData.id}/>
     }
     let checkbox;
       if (!this.state.checkbox && !this.state.confirmed){

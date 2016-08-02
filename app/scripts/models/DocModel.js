@@ -8,19 +8,18 @@ const DocModel = Backbone.Model.extend({
     confirmed: false
   },
   markAsRead: function(){
-    // console.log(this);
     this.set('isRead', true);
-    // this.set({'confirmed', false});
-    // this.set({'isRead':true, 'confirmed':false});
+    this.set('confirmed', false);
   },
   cancel: function(){
     this.set('isRead', false);
     this.set('confirmed', false);
   },
-  confirmAsRead: function(){
-    this.set('isRead', true);
-    this.set('confirmed', true);
-  },
+  // confirmRead: function(id){
+  //   console.log(id);
+  //   let readDocs = store.session.get('readDocs')
+  //   confirmedDoc = store.docsCollection.get('id');
+  // },
 });
 
 export default DocModel;
