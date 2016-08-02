@@ -15,7 +15,7 @@ const SingleDoc = React.createClass({
     store.docModel.on('change', () => {
       this.setState({checkbox:store.docModel.get('isRead')});
     });
-    console.log(this.props);
+    // console.log(this.props);
   },
   clickedCheckbox: function(){
     store.docModel.markAsRead();
@@ -48,12 +48,15 @@ const SingleDoc = React.createClass({
 
 
     return (
+      <div className="singleDoc-container">
         <div className="single-doc">
           <h3>{docData.title}</h3>
           <p>{docData.body}</p>
           {checkbox}
           {docModal}
+          <button className="backBtn" onClick={this.backBtn}>back</button>
         </div>
+      </div>
     );
   }
 });

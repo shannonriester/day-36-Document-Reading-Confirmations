@@ -4,10 +4,20 @@ import store from '../store';
 import DocPreview from './DocPreview';
 
 const AllDocs = React.createClass({
-
+  getInitialState: function() {
+    return {
+      showDoc: false,
+    }
+  },
+  showDocFunction: function() {
+    this.setState({showDoc: true});
+  },
+  hideDocFunction: function(){
+    this.setState({showDoc:false});
+  },
   render: function(){
     let docPreview = store.docsCollection.map((doc, i) =>{
-      return <DocPreview key={i} doc={doc}/>;
+      return (<DocPreview onClick={this.showDocFunction} hideDoc={this.hideDocFunction} key={i} doc={doc}/>);
     });
 
     return (

@@ -1,0 +1,25 @@
+.allDocs-container{
+  text-align: center;
+  font-weight: 100;
+  h3 {
+    font-size: 1.5rem;
+  }
+  .ulDocs {
+    padding: 0;
+    margin: 0;
+    background: #FFF;
+    border: solid 1px $accent;
+    // display: inline-flex;
+    // flex: 50;
+    // width: 50%;
+    // &::after {
+    //   clear: both;
+    //   display: block;
+    //   content: ' ';
+    // }
+    li{
+      border-bottom: solid 1px $accent;
+      // float: left;
+    }
+  }
+}

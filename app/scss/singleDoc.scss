@@ -1,0 +1,23 @@
+.singleDoc-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: rgba(0,0,0, .7);
+}
+.single-doc {
+  height: 70vh;
+  width: 70vw;
+  margin: 0 auto;
+  line-height: 1.2em;
+  background: $background-color;
+  text-align: center;
+  justify-content: center;
+  h3 {
+    margin: 0;
+    padding-top: 5%;
+    color: $background-neutral;
+  }
+}
